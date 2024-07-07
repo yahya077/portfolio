@@ -14,7 +14,7 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
@@ -24,14 +24,37 @@ const CONFIG = {
         },
       },
       manual: {
-        // Properties for manually specifying projects
-        projects: ['yahya077/flutterping', 'WEG-Technology/room', 'yahya077/flutterping-laravel', 'yahya077/portfolio-microservice-app'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['yahya077/flutterping', 'WEG-Technology/room', 'yahya077/flutterping-laravel', 'yahya077/portfolio-microservice-app', 'yahya077/microfrontend-purejs', 'yahya077/otp-golang', 'yahya077/email-microservice', 'yahya077/expander.js'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [],
+      projects: [
+        {
+          title: 'FlutterPing',
+          description:
+              'Server driven micro mobile app package',
+          imageUrl:
+              '',
+          link: 'https://docs.flutterping.com',
+        },
+        {
+          title: 'VetPI',
+          description:
+              'Pet SuperApp',
+          imageUrl:
+              'https://vetpi.s3.eu-central-1.amazonaws.com/app/logo.png',
+          link: 'https://vetpi.com',
+        },
+        {
+          title: 'Siparişetgelsin',
+          description:
+              'Food delivery app that connects users with local restaurants',
+          imageUrl:
+              '',
+          link: 'https://siparisetgelsin.com',
+        }
+      ],
     },
   },
   seo: {
@@ -48,7 +71,7 @@ const CONFIG = {
     instagram: 'yahyahindioglu',
     reddit: '',
     threads: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: 'yahyahindioglu3747', // example: 'pewdiepie'
     udemy: '',
     dribbble: '',
     behance: '',
@@ -114,14 +137,7 @@ const CONFIG = {
       companyLink: '',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  certifications: [],
   educations: [
     {
       institution: 'MIS',
